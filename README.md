@@ -37,8 +37,8 @@ This is a mobile first design with the desktop version displaying at 785px.
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://github.com/funficient/fem-results-summary-component/)
-- Live Site URL: [Add live site URL here](https://funficient.github.io/fem-results-summary-component/)
+- Solution URL: [Github repository](https://github.com/funficient/fem-results-summary-component/)
+- Live Site URL: [Results Summary Component Live](https://funficient.github.io/fem-results-summary-component/)
 
 ## My process
 
@@ -85,8 +85,8 @@ CSS:
 
 ## Author
 
-- Website - [Add your name here](https://www.funficient.com)
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/funficient)
+- Website - [fun-fi-cient](https://www.funficient.com)
+- Frontend Mentor - [@funficient](https://www.frontendmentor.io/profile/funficient)
 
 
 ## Acknowledgments
