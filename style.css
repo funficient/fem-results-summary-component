@@ -1,41 +1,43 @@
+@font-face {
+  font-family: 'HankenGrotesk';
+  font-display: swap;
+  font-weight: 100 900;
+  src: url('assets/HankenGrotesk-VariableFont_wght.ttf') format('truetype');
+}
 
 :root { 
-    --color-primary-light-red: hsl(0, 100%, 67%);
+    --color-primary-red: hsl(0, 100%, 67%);
     --color-primary-orange: hsl(39, 100%, 56%);
-    --color--primary-teal: hsl(166, 100%, 37%);
+    --color--primary-green: hsl(166, 100%, 37%);
     --color--primary-blue: hsl(234, 85%, 45%);
 
     --color--background-gradient-slate: hsl(252, 100%, 67%);
     --color--background-gradient-blue: hsl(241, 81%, 54%);
+    --color-background-gradient: linear-gradient(hsl(252, 100%, 67%),hsl(241, 81%, 54%));
 
     --color--circle-gradient-violet: hsl(256, 72%, 46, 1);
     --color--circle-gradient-persian-blue: hsl(241, 72%, 46%, 0);
+    --color-circle-gradient: linear-gradient(hsl(256, 72%, 46, 1), hsl(241, 72%, 46%, 0));
 
     --color-neutral-white: hsla(0, 0%, 100%, 1);
+    --color-neutral-white-transparent: hsla(0, 0%, 100%, 0.7);
     --color-neutral-light-blue: hsl(221, 100%, 96%);
     --color-neutral-lavender: hsl(241, 100%, 89%);
     --color-neutral-dark-blue: hsl(241, 30%, 27%);
 
-
+    font-family: 'HankenGrotesk', sans-serif;
     font-size: 18px;
-    
-    font-synthesis: none;
+
     text-rendering: optimizeSpeed;
     -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    -webkit-text-size-adjust: 100%;
+    
   }
-  
-  *,
-  *::before,
-  *::after {
-    box-sizing: border-box;
-  }
-  
+    
   * {
     margin: 0;
     padding: 0;
     font: inherit;
+    box-sizing: border-box;
   }
   
   /* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
@@ -43,60 +45,153 @@
   ol[role='list'] {
     list-style: none;
   }
-  
-  /* Set core root defaults */
-  html:focus-within {
-    scroll-behavior: smooth;
-  }
-  
-  /* Set core body defaults */
+   
   html, body {
    background: var(--color-neutral-background);
-
   }
-   
-  /* A elements that don't have a class get default styles */
-  a:not([class]) {
-    text-decoration-skip-ink: auto;
-  }
-  
-  /* Make images easier to work with */
+    
   img,
   picture, 
   svg {
-    max-width: 100%;
     display: block;
+    max-width: 100%;
   }
   
-  /* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
-  @media (prefers-reduced-motion: reduce) {
-    html:focus-within {
-     scroll-behavior: auto;
-    }
-    
-    *,
-    *::before,
-    *::after {
-      animation-duration: 0.01ms !important;
-      animation-iteration-count: 1 !important;
-      transition-duration: 0.01ms !important;
-      scroll-behavior: auto !important;
-    }
-  }
   
   /*------------------------------------ End of Reset -----------------------------*/
   
   /*------------------------------------ Mobile first ---------------------*/
  
+
+ .section-title {
+  font-weight: 600;
+  font-size: 1.2rem;
+ }
+
+ .results-summary {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  text-align: center;
+  max-width: 785px;
+ }
+
+ .results {
+  background: var(--color-background-gradient);
+  color: var(--color-neutral-white-transparent);
+  border-radius: 0 0 2rem 2rem;
+  padding: 2rem;
+ }
+
+ .summary {
+  padding: 2rem;
+ }
+
+ .grid-flow {
+  display: grid;
+  align-content: start;
+  grid-gap: 1rem;
+ }
+
+ .flex-group {
+  display: flex;
+ }
+
+ .left-align {
+  text-align: left;  
+ }
  
+ .result-score {
+  display: grid;
+  place-content: center;
+  width: 12rem;
+  background: hsl(256, 72%, 33%);
+  aspect-ratio: 1 / 1;
+  border-radius: 50%;
+  margin: 1rem auto;
+ }
+
+ .result-score span {
+  display: block;
+  font-size: 5rem;
+  font-weight: 900;
+  color: var(--color-neutral-white);
+ }
+
+ .result-rank {
+  color: var(--color-neutral-white);
+  font-size: 1.5rem;
+  font-weight: 600;
+ }
+
+
+ .summary-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  border-radius: 0.5rem;
+
+ }
+
+ .summary-item[data-item-type="red"] {
+  background-color: hsl(0, 100%, 67%, 0.1);
+  color: hsl(0, 100%, 67%, 1);
+ }
+
+ .summary-item[data-item-type="orange"] {
+  background-color: hsl(39, 100%, 56%, 0.1);
+  color: hsl(39, 100%, 56%);
+ }
+
+ .summary-item[data-item-type="green"] {
+  background-color: hsl(166, 100%, 37%, 0.1);
+  color: hsl(166, 100%, 37%);
+ }
+
+ .summary-item[data-item-type="blue"] {
+  background-color: hsl(234, 85%, 45%, 0.1);
+  color: hsl(234, 85%, 45%);
+ }
+
+ .summary-item-title {
+  padding-left: 1rem;
+ }
+
+ .summary-score {
+  color: hsl(241, 30%, 27%, 0.5);
+  font-weight: 600;
+ }
+
+ .summary-score span{
+  color: hsl(241, 30%, 27%);
+ }
+
+
 
 
   /*----- Tablet sizing -----*/
   @media (min-width: 785px) {
+    body {
+      min-height: 100vh;
+      display: grid;
+      place-items: center;
+    }
 
-    
-  
+    .results-summary {
+      width: minmax(600px, 70%, 80%);
+      border-radius: 2rem;
+      box-shadow: 0.5rem 1rem 2rem hsla(240, 75%, 51%, 0.05);
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 1fr;
+      
+    }
+
+    .results {
+      border-radius: 2rem;
+    }
+
   }
+
   /*----- Desktop styling -----*/
 
 @media (min-width: 1440px) {
@@ -110,21 +205,18 @@
   cursor: pointer;
   background: var(--color-neutral-dark-blue);
   color: var(--color-neutral-white);
+  font-weight: 600;
   border: none;
   padding: 1rem 2rem;
   border-radius: 30px;
-  width: 100vw;
-  margin-bottom: 3em;
-  margin-top: auto;
-}
-
-
-
-button:hover {
-
-  background-color: var(--color--primary-blue);
+  width: 100%;
   
 }
+
+button:hover {
+  background: linear-gradient(hsl(252, 100%, 67%),hsl(241, 81%, 54%));
+}
+
 
 
 
