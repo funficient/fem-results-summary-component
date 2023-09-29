@@ -1,0 +1,16 @@
+{
+  "folders": [
+	{
+		"path": "."
+	},
+	{
+		"path": "../../../Downloads/results-summary-component-main/results-summary-component-main/assets"
+	},
+	{
+		"path": "../../../Downloads/results-summary-component-main/results-summary-component-main/design"
+	}
+],
+  "settings": {
+    "liveServer.settings.multiRootWorkspaceName": "fem-results-summary-component"
+  }
+}
