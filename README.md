@@ -1,6 +1,6 @@
 # Frontend Mentor - Results summary component solution
 
-This is a solution to the [Results summary component challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/results-summary-component-CE_K6s0maV). Frontend Mentor challenges help you improve your coding skills by building realistic projects. 
+This is a solution to the [Results summary component challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/results-summary-component-CE_K6s0maV). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
 
 ## Table of contents
 
@@ -11,9 +11,7 @@ This is a solution to the [Results summary component challenge on Frontend Mento
 - [My process](#my-process)
   - [Built with](#built-with)
   - [What I learned](#what-i-learned)
-  - [Continued development](#continued-development)
-  - [Useful resources](#useful-resources)
-- [Author](#author)
+  - [Author](#author)
 - [Acknowledgments](#acknowledgments)
 
 ## Overview
@@ -34,7 +32,6 @@ This is a mobile first design with the desktop version displaying at 785px.
 
 ![](./assets/desktop-final.png)
 
-
 ### Links
 
 - Solution URL: [Github repository](https://github.com/funficient/fem-results-summary-component/)
@@ -52,14 +49,17 @@ This is a mobile first design with the desktop version displaying at 785px.
 
 ### What I learned
 
-How to use data attributes to more easily modify colors in a single class.  Previously I would have added classes for each color.  Although it is the same amount of code, I like that there are fewer classes to keep track of.
+How to use data attributes to more easily modify colors in a single class. Previously I would have added classes for each color. Although it is the same amount of code, I like that there are fewer classes to keep track of.
 
 HTML Code:
+
 ```
 <div class="summary-item" data-item-type="red">
 
 ```
-CSS: 
+
+CSS:
+
 ```
  .summary-item[data-item-type="red"] {
   background-color: hsl(0, 100%, 67%, 0.1);
@@ -82,13 +82,13 @@ CSS:
  }
 ```
 
-
 ## Author
 
 - Website - [fun-fi-cient](https://www.funficient.com)
 - Frontend Mentor - [@funficient](https://www.frontendmentor.io/profile/funficient)
 
-
 ## Acknowledgments
 
 Thanks to the many YouTube videos with solutions to help guide me in the right direction, specifically Kevin Powell.
+
+Thank you also to Henry Olivares @Henolivares and the other community members for reviewing my code and helpful suggestions.
