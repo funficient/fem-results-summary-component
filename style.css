@@ -14,7 +14,7 @@
     --color--background-gradient-slate: hsl(252, 100%, 67%);
     --color--background-gradient-blue: hsl(241, 81%, 54%);
     --color--background-gradient: linear-gradient(hsl(252, 100%, 67%),hsl(241, 81%, 54%));
-
+  
     --color--circle-gradient-violet: hsl(256, 72%, 46, 1);
     --color--circle-gradient-persian-blue: hsl(241, 72%, 46%, 0);
     --color--circle-gradient: linear-gradient(hsl(256, 72%, 46%, 1), hsl(241, 72%, 46%, 0));
